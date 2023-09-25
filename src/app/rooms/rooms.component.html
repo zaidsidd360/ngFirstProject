@@ -1,0 +1,12 @@
+<div>
+  <h1>
+    Welcome to {{hotelName}}!
+  </h1>
+  <h2>
+    No. of total rooms: {{room.totalRooms}} <br />
+    No. of booked rooms: {{room.bookedRooms}} <br />
+    No. of rooms available: {{room.availableRooms}}
+  </h2>
+  <button (click)="increaseBookedRooms()" [disabled]="room.bookedRooms === room.totalRooms">book a room</button>
+  <button (click)="decreaseBookedRooms()" [disabled]="room.availableRooms === room.totalRooms">un-book a room</button>
+</div>
