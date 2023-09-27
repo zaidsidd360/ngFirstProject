@@ -1,2 +1,11 @@
 <ngfp-rooms></ngfp-rooms>
+
+<div class="teachersContainer">
+  <div class="teacher" *ngFor="let teacher of teachers">
+    <h2>{{teacher.name}}</h2>
+    <h3>{{teacher.email}}</h3>
+    <h3>{{teacher.phNumber}}</h3>
+  </div>
+
+</div>
 <router-outlet></router-outlet>
